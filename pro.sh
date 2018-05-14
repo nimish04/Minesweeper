@@ -418,11 +418,7 @@ echo -e "\e[0;32m \t\t\t\t         See you next time.\e[0m\n"
 echo -e "\e[1;34m \t\t\t\t     Thank You For Playing !!!\e[0m\n"
 echo -e "\n\n\n\n\n\n\n\n\n"
 echo -e "\e[1;34m \t\t\t\t\t Game created by:\e[0m\n\n"
-echo -e "\e[0;32m \t\t\t\t\t     Akshay      \e[0m\n"
-echo -e "\e[0;34m \t\t\t\t\t     Shaswat    \e[0m\n"
-echo -e "\e[0;33m \t\t\t\t\t     Nishanth    \e[0m\n"
-echo -e "\e[0;31m \t\t\t\t\t     Dashan    \e[0m\n"
-echo -e "\e[0;31m \t\t\t\t\t     Nimish    \e[0m\n\n\n\n\n\n\n\n"
+echo -e "\e[0;31m \t\t\t\t\t     Nimish    \e[0m\n\n\n\n"
 echo -e "\e[0;36m \t\t\t\t      Press [ ENTER ] to exit. \e[0m\n\n"
 read
 echo

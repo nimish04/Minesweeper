@@ -66,62 +66,62 @@ done
 done
 }
 
-alpha()
-{
-#display-test
-clear
-echo
-echo -e "\t\t\t\t    \033[32m$n X $m GRID ----- $mine2 MINEs\033[0m \n"
-echo
-echo -ne " \t\t\t \033[33mcol\033[0m\t "
-for((i=0;i<m;i++))
-do
-echo -ne " \033[33m$i\033[0m  "
-done
-echo
-echo
-for((i=0;i<n;i++))
-do
-echo -ne "\t\t\t\033[33mrow $i\033[0m \t "
-for((j=0;j<m;j++))
-do
-if((board[$i,$j]==0))
-then
-/bin/echo -ne "\e[0;37m . \e[0m "
-elif((board[$i,$j]==1))
-then
-/bin/echo -ne "\e[1;34m ${board[$i,$j]} \e[0m "
-elif((board[$i,$j]==2))
-then
-/bin/echo -ne "\e[1;32m ${board[$i,$j]} \e[0m "
-elif((board[$i,$j]==3))
-then
-/bin/echo -ne "\e[1;35m ${board[$i,$j]} \e[0m "
-elif((board[$i,$j]==4))
-then
-/bin/echo -ne "\e[1;33m ${board[$i,$j]} \e[0m "
-elif((board[$i,$j]==5))
-then
-/bin/echo -ne "\e[0;34m ${board[$i,$j]} \e[0m "
-elif((board[$i,$j]==6))
-then
-/bin/echo -ne "\e[0;32m ${board[$i,$j]} \e[0m "
-elif((board[$i,$j]==7))
-then
-/bin/echo -ne "\e[0;35m ${board[$i,$j]} \e[0m "
-elif((board[$i,$j]==8))
-then
-/bin/echo -ne "\e[0;33m ${board[$i,$j]} \e[0m "
-elif((board[$i,$j]==-1))
-then
-/bin/echo -ne " \e[36;7m#\e[0m  "
-fi
-done
-echo
-echo
-done
-echo
-}
+# alpha()
+# {
+# #display-test
+# clear
+# echo
+# echo -e "\t\t\t\t    \033[32m$n X $m GRID ----- $mine2 MINEs\033[0m \n"
+# echo
+# echo -ne " \t\t\t \033[33mcol\033[0m\t "
+# for((i=0;i<m;i++))
+# do
+# echo -ne " \033[33m$i\033[0m  "
+# done
+# echo
+# echo
+# for((i=0;i<n;i++))
+# do
+# echo -ne "\t\t\t\033[33mrow $i\033[0m \t "
+# for((j=0;j<m;j++))
+# do
+# if((board[$i,$j]==0))
+# then
+# /bin/echo -ne "\e[0;37m . \e[0m "
+# elif((board[$i,$j]==1))
+# then
+# /bin/echo -ne "\e[1;34m ${board[$i,$j]} \e[0m "
+# elif((board[$i,$j]==2))
+# then
+# /bin/echo -ne "\e[1;32m ${board[$i,$j]} \e[0m "
+# elif((board[$i,$j]==3))
+# then
+# /bin/echo -ne "\e[1;35m ${board[$i,$j]} \e[0m "
+# elif((board[$i,$j]==4))
+# then
+# /bin/echo -ne "\e[1;33m ${board[$i,$j]} \e[0m "
+# elif((board[$i,$j]==5))
+# then
+# /bin/echo -ne "\e[0;34m ${board[$i,$j]} \e[0m "
+# elif((board[$i,$j]==6))
+# then
+# /bin/echo -ne "\e[0;32m ${board[$i,$j]} \e[0m "
+# elif((board[$i,$j]==7))
+# then
+# /bin/echo -ne "\e[0;35m ${board[$i,$j]} \e[0m "
+# elif((board[$i,$j]==8))
+# then
+# /bin/echo -ne "\e[0;33m ${board[$i,$j]} \e[0m "
+# elif((board[$i,$j]==-1))
+# then
+# /bin/echo -ne " \e[36;7m#\e[0m  "
+# fi
+# done
+# echo
+# echo
+# done
+# echo
+# }
 
 display()
 {
